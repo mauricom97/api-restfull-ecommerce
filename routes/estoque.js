@@ -9,4 +9,5 @@ router.put('/:id', estoque.update)
 router.post('/', estoque.create)
 router.delete('/:id', estoque.delete)
 
+
 module.exports = router

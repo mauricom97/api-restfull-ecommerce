@@ -9,4 +9,5 @@ router.put('/:id', categoria.update)
 router.post('/', categoria.create)
 router.delete('/:id', categoria.delete)
 
+
 module.exports = router
