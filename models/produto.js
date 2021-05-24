@@ -18,6 +18,12 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         timestamps: false,
         tableName: 'produtos'
+    },{
+        classMethods: {
+            associate: (models) => {
+                Produto.belongsTo(models.Categoria)
+            }
+        }
     });
     //Produto.belongsTo(Categoria, { as: 'idCategoria', constraints: false })
     return Produto

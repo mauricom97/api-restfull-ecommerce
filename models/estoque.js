@@ -15,6 +15,12 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         timestamps: false,
         tableName: 'estoque'
+    },{
+        classMethods: {
+            associate: (models) => {
+                Estoque.hasMany(models.Produto)
+            }
+        }
     });
 
     return Estoque;
