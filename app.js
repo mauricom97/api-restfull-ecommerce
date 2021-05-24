@@ -7,6 +7,7 @@ const bodyParser = require('body-parser')
 require('./routes/index')(app)
 
 
+
 app.listen(port, () => {
     console.log(`App initiated | PORT: ${port} | ${moment().format('LLLL')}`)
 })
