@@ -4,6 +4,7 @@ const estoque = require("./estoque")
 var express = require("express")
 var bodyParser = require("body-parser")
 
+
 var app = express()
 
 // create application/json parser
